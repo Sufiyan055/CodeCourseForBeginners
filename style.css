@@ -1,0 +1,1034 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Righteous&display=swap');
+
+/* I also used style tag in every html page to do changes in particular html file e.g in menunar icon color, home btn color*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.iconHome {
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 3px 7px;
+}
+
+.stickybar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.53);
+}
+
+.notstickybar {
+  display: flex;
+  padding: 6px 10px;
+  justify-content: space-between;
+  /* background: linear-gradient(to right, blue,lightblue); */
+  background-color: hwb(204 10% 5%);
+}
+
+.notstickybar h1 {
+  font-family: 'Ubuntu', sans-serif;
+  color: aliceblue;
+  font-size: 2.7vw;
+}
+
+.notstickybar ul {
+  display: flex;
+  margin: 10px 25px 0px 25px;
+  transition: 0.5s;
+}
+
+.notstickybar ul li {
+  list-style: none;
+  margin: 8px 20px;
+}
+
+.notstickybar ul li a {
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  letter-spacing: 0.2cqmin;
+  font-size: 18px;
+}
+
+.notstickybar ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: blue;
+  display: block;
+  margin: auto;
+  transition: 0.8s;
+}
+
+.notstickybar ul li a:hover::after {
+  width: 100%;
+}
+
+/* css for img front part after navbar */
+
+.divimgbar {
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url(pexels-artem-podrez-4492126.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#myInput {
+  width: 30%;
+  /* Full-width */
+  font-size: 16px;
+  /* Increase font-size */
+  padding: 12px 20px 12px 30px;
+  /* Add some padding */
+  border: 1px solid #ddd;
+  /* Add a grey border */
+  margin-bottom: 12px;
+  /* Add some space below the input */
+  outline: none;
+  border-radius: 8px;
+}
+
+.divsearchresult {
+  margin-top: -13px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  width: 33.6%;
+  overflow: hidden;
+  margin-left: 33.2%;
+  position: absolute;
+  top: 2px;
+  border-radius: 8px;
+  box-shadow: 0.5px 0.5px 8px 0.5px #fff;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  /* Add a border to all links */
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: #f6f6f63d;
+  /* Grey background color */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove default text underline */
+  font-size: 18px;
+  /* Increase the font-size */
+  color: black;
+  /* Add a black text color */
+  display: block;
+  /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+  /* Add a hover effect to all links, except for headers */
+}
+
+.divsearchicon {
+  position: relative;
+  margin: 350px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconsearch {
+  width: 22px;
+  position: absolute;
+  left: 33.6%;
+  top: 10px;
+}
+
+.searchpara {
+  font-size: 40px;
+  margin-top: 110px;
+  font-family: sans-serif;
+  color: black;
+  /* background: linear-gradient(to right,transparent, orange,yellow,transparent); */
+  /* background: linear-gradient(to right,transparent,hwb(204 10% 5% / 0.433), transparent); */
+  /* box-shadow: inset 0px 2px 22px 5px hwb(204 6% 19% / 0.289); */
+  border: 1px solid;
+  border-radius: 25px 2px;
+  width: fit-content;
+  padding: 1px 8px;
+  letter-spacing: 0.5cqmin;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+
+.menuiconpic {
+  width: 3vw;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+  font-display: unset;
+}
+.menudisplayicon{
+  display: none;
+}
+.divparm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 95px;
+}
+
+/* ------Media query of the front part means upper one--------- */
+@media screen and (max-width: 870px) {
+  .notstickybar {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.548), transparent);
+  }
+
+  .notstickybar h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 5px 0 0 0;
+  }
+  #menupart li a, #menupartcg li a{
+    color: #fff;
+  }
+  
+  .notstickybar ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .menudisplayicon{
+    display: block;
+  }
+  .menuiconpic {
+    display: block;
+  }
+
+  #menulist li a::after {
+    content: none;
+  }
+
+  #menulist {
+    overflow: hidden;
+  }
+
+  .divsearchresult {
+    margin-top: 143px;
+    /* border: 1px solid; */
+    position: relative;
+  }
+
+  #myUL li a {
+    font-size: 15px;
+    padding: 6px 0px;
+  }
+
+  #myUL {
+    height: 110px;
+    position: absolute;
+  }
+
+  .divsearchbar {
+    margin-top: -120px;
+  }
+
+  .divsearchicon {
+    top: 158px;
+
+  }
+
+  .divparm {
+    position: relative;
+    top: 5px;
+  }
+
+  .searchpara {
+    font-size: 20px;
+  }
+
+  .iconsearch {
+    width: 20px;
+    margin-left: -10px;
+  }
+
+  .iconHome {
+    position: absolute;
+    
+    
+    background: transparent;
+    right: 20px;
+    top: 10px;
+  }
+  .vidstubar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divftbar{
+    flex-direction: column;
+  }
+
+}
+
+
+/* next part below front part */
+/* Top videos css */
+
+.h1tutorial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+.tutorialicons {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.diviconimg{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px gray;
+}
+.imgicon{
+  width: 50%;
+}
+/* ----------------- */
+.h2tuvids{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  font-size: 2.5vw;
+}
+
+.dividpage{
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  padding: 20px 10px;
+  background: linear-gradient(to top,rgba(0, 170, 255, 0.473),rgb(15, 161, 234));
+  visibility: hidden;
+  border-radius: 8px;
+  right: 10px;
+  left: 10px;
+  bottom: 50px;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+}
+.btn{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 4px 8px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  background: rgba(255, 0, 0, 0.441);
+  font-weight: bold;
+}
+.btn:hover{
+  border: none;
+  background-color: red;
+  color: #eee;
+}
+
+.vidstubar{
+  margin: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vidstubar iframe{
+  width: 400px;
+  height: 300px;
+  margin: 5px 10px;
+}
+.abaryt{
+  background-color: blueviolet;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 5px 8px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 20px;
+}
+.showimg{
+  visibility: visible;
+}
+.divalink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.divalink a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: rebeccapurple;
+  border-radius: 5px;
+}
+/* animation on scroll in courses of home page below search bar */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.hiddenleft{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  
+}
+.diviconimg:nth-child(2){
+  transition-delay: 200ms;
+}
+.diviconimg:nth-child(3){
+  transition-delay: 400ms;
+}
+.diviconimg:nth-child(4){
+  transition-delay: 600ms;
+}
+.diviconimg:nth-child(5){
+  transition-delay: 800ms;
+}
+.diviconimg:nth-child(6){
+  transition-delay: 1000ms;
+}
+.diviconimg:nth-child(7){
+  transition-delay: 1200ms;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+/*----------------------- footer ------------------------*/
+.footerbtom{
+  background-color: #000;
+  padding: 30px 20px 10px 20px;
+  color: #ddd;
+}
+.divftbar{
+  display: flex;
+  justify-content: center;
+}
+.pbtm {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.ulft{
+  margin: 5px 70px;
+}
+.ulft li{
+  list-style: none;
+}
+.ulft p{
+  margin-bottom: 15px;
+  width: fit-content;
+}
+.ulft p::after{
+  content: " ";
+  height: 2px;
+  width: 100%;
+  background-color: cornflowerblue;
+  margin: left;
+  display: block;
+  border-radius: 5px;
+}
+.ulft li{
+  margin: 5px 0px;
+}
+.ulft li a{
+  text-decoration: none;
+  color: gray;
+}
+.followus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.followus li{
+  list-style: none;
+  margin: 10px 10px;
+}
+
+.linksft{
+  color: lightblue;
+}
+
+/*-------------------------- 2nd Page i.e Courses Webpage [editing is going here] ---------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+.notstickybar{
+  overflow: hidden;
+}
+.divcoursesbar{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.divccmainlist{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.divcoursesection{
+  padding: 70px 10px 10px 10px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg,#e1d5d578,#95c0ff,#d4caca52);
+  background: linear-gradient();
+  scroll-snap-align: start;
+}
+.divcoursesection:nth-child(2){
+  background: linear-gradient(#00000091,#0000009e),url(images/web.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(3){
+  background: linear-gradient(#0000008c,#00000085),url(images/android.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(4){
+  background: linear-gradient(#0000008c,#00000085),url(images/softwaretest.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(5){
+  background: linear-gradient(#0000008c,#00000085),url(images/cybersecurity.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(6){
+  background: linear-gradient(#0000008c,#00000085),url(images/game\ dev.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(7){
+  background: linear-gradient(#0000008c,#00000085),url(images/uiandux.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(8){
+  background: linear-gradient(#0000008c,#00000085),url(images/machine\ learn.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(9){
+  background: linear-gradient(#0000008c,#00000085),url(images/seo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(10){
+  background: linear-gradient(#0000008c,#00000085),url(images/cloud.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.divcoursesection:nth-child(11){
+  background: linear-gradient(#0000008c,#00000085),url(images/datasci.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 70px #000 inset;
+  margin: 10px 0px;
+}
+.acclink{
+  text-decoration: none;
+  color: #000;
+  margin: 10px 15px;
+}
+.courselist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: fit-content;
+  border-radius: 6px;
+  box-shadow: 4px 4px 8px gray;
+  cursor: pointer;
+}
+.courselist .imgcc{
+  width: 110px;
+  height: 80px;
+}
+.courselist img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.courselist .ccname{
+  padding: 10px;
+  background: #fff;
+}
+/* .ccsearcharea{
+  right: 0px;
+}
+.ccsearchbar{
+  position: fixed;
+  border: 1px solid #000;
+  width: fit-content;
+
+} */
+
+.vidsccbar{
+  margin: 20px 10px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+
+}
+.vidsccbar::-webkit-scrollbar{
+  width: 0px;
+}
+.vidsdetail{
+  /* border: 2px solid #fff; */
+  width: 300px;
+  height: 50vh;
+  margin: 0px 5px 5px 5px;
+}
+.vidsdetail p{
+  color: #fff;
+  margin: 10px 5px;
+}
+
+.vidsccbar iframe{
+  width: 300px;
+  height: 200px;
+  box-shadow: 2px 2px 4px 2px #000;
+}
+.vidsccbar iframe:hover{
+  transition: 0.4s;
+  box-shadow: none;
+}
+.h1cc{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 23px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+  color: #fff;
+  width: fit-content;
+  padding: 5px 10px;
+  border-left: 3px solid #95c0ff;
+}
+
+.ccpractice{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  height: 22%;
+}
+.alinkexercise{
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(45deg,#3b84f1,#6998df);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+  margin: 10px 10px;
+  width: 30%;
+}
+.alinkexercise:hover{
+  box-shadow: 2px 2px 7px 2px gray;
+}
+
+.plinkexercise{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin: 15px 0px;
+  width: fit-content;
+  padding: 5px 10px;
+  border-left: 3px solid #95c0ff;
+}
+
+/*-------------- Continue media query for 2nd page i.e courses page----------------- */
+@media screen and (max-width: 870px){
+  .courselist .ccname{
+    padding: 10px;
+    width: 150px;
+    background: #fff;
+  }
+  .divcoursesection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .divccmainlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .divcoursesection{
+    overflow-y: scroll;
+    background-color: lightblue;
+    padding-top: 52px;
+  }
+  
+  .vidsccbar{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0px;
+    width: 350px;
+    max-width: 450px;
+    /* height: 430px; */
+    background-color: #ffffff1e;
+  }
+  .vidsccbar iframe{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px #fff;
+  }
+  .vidsdetail{
+    border: none;
+    margin-left: 5px;
+    margin-right: 2px;
+  }
+  .ccpractice{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0px;
+    height: 22%;
+    overflow-y: scroll;
+    background-color: #ffffff21;
+  }
+  .alinkexercise{
+    width: 50%;
+    height: fit-content;
+  }
+  .h1cc{
+    font-size: 18px;
+  }
+  .plinkexercise{
+    padding: 3px 5px 10px 10px;
+    /* border-left: 1px solid #fff;
+    border-right: 1px solid #fff; */
+    font-size: 20px;
+    position: relative;
+  }
+  /* .plinkexercise::before{
+    content: " ";
+    width: 15%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  } */
+  /* .plinkexercise::after{
+    content: " ";
+    width: 15%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin: left;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  } */
+  #menuproject .profff{
+    color: #fff;
+  }
+  .aboutbg p{
+    transform: translate(-50%,-50%);
+  }
+  
+  
+}
+
+/*-------------------------- 3rd Page i.e Projects Webpage [editing is going here] ---------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.Projectsmainlist:nth-child(1){
+  background: linear-gradient(to top,#ffffff16,#00000049,#00000024),url(images/projectsmain.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Projectsmainlist:nth-child(2){
+  background: none;
+  box-shadow: none;
+  color: #000;
+}
+.Projectsmainlist:nth-child(3){
+  background: none;
+  box-shadow: none;
+  color: #000;
+}
+.Projectsmainlist:nth-child(4){
+  background: none;
+  box-shadow: none;
+  color: #000;
+}
+.Projectsmainlist:nth-child(5){
+  background: none;
+  box-shadow: none;
+  color: #000;
+}
+.projectvids p{
+  color: #000;
+}
+.projectvids iframe{
+  box-shadow: 2px 2px 4px 2px #000;
+}
+
+/*-------------------------- 3rd Page i.e Projects Webpage [editing is going here] ---------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.cgmaindiv{
+  margin-top: 65px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.cgvidsbar{
+  display: flex;
+  flex-wrap: wrap;
+  /* width: calc(100% - 20px - 20px - 1px - 1px); */
+  box-shadow: 1px 1px 10px 1px #000;
+}
+.cgvids{
+  width: 470px;
+  height: 270px;
+}
+.cgvids iframe{
+  width: 100%;
+  height: 100%;
+}
+.cgsection{
+  margin: 20px 40px;
+}
+.cginfo{
+  margin: 10px 5px;
+  font-size: 20px;
+}
+
+/*-------------------------- 3rd Page i.e Projects Webpage [editing is going here] ---------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.aboutbg{
+  padding: 30px 0px;
+  background: linear-gradient(to bottom,#00000078,#0000001a),url(images/aboutus.jpg);
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.aboutbg p{
+  font-size: 55px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  padding: 10px 15px;
+  border: 1px solid #ffffffb6;
+  color: #ffffffb6; 
+}
+.Aboutinfo, .thankabout{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.Aboutinfo p{
+  width: 50%;
+  font-size: 20px;
+  word-spacing: 5px;
+  padding: 70px 70px;
+  position: relative;
+}
+.Aboutinfo p .left{
+  width: 2px;
+  height: 50px;
+  background-color: #95c0ff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.Aboutinfo p .top{
+  width: 50px;
+  height: 2px;
+  background-color: #95c0ff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.Aboutinfo p .right{
+  width: 2px;
+  height: 50px;
+  background-color: #95c0ff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.Aboutinfo p .bottom{
+  width: 50px;
+  height: 2px;
+  background-color: #95c0ff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.thankabout p{
+  font-size: 23px;
+  margin-top: 15px;
+  padding: 15px 15px;
+  position: relative;
+  border-left: 2px solid #95c0ff;
+}
+/* --------------------Contact Form---------------------- */
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 48px 10px;
+}
+.hicontact h2{
+  margin: 10px 5px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 40%;
+  height: 80vh;
+  margin-top: 6px;
+  padding: 20px;
+}
+.column img{
+  width: 100%;
+  height: 100%;
+}
+.row{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* ---------------------------------------------------- */
