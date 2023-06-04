@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Bruno+Ace+SC&family=Cedarville+Cursive&family=Edu+NSW+ACT+Foundation:wght@600&family=Fasthand&family=Gelasio:ital,wght@1,500&family=Kalam:wght@300&family=Lobster&family=Noto+Serif:ital,wght@0,700;1,400;1,700&family=Philosopher:ital@1&family=Poppins:ital,wght@0,300;1,200;1,300;1,500&family=Potta+One&family=Raleway:ital,wght@1,600&family=Ubuntu:ital,wght@1,300;1,400&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+    <title>CCForBeginners - About & Contact Us</title>
+</head>
+
+<body>
+
+    <div class="stickybar">
+        <div class="notstickybar">
+            <h1> <a href="index.html">
+                    <i class="material-symbols-outlined iconHome" style="color: #000;">home</i></a>CodeCourseForBeginners</h1>
+
+            <span class="menudisplayicon"><i onclick="openmenuabout()" class="material-symbols-outlined menuiconpic" style="color: #000;">
+                menu
+            </i></span>
+
+            <ul id="menupartabout">
+                <li><a href="Courses.html">Courses</a>
+                </li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="CareerGuidance.html">Guidance</a></li>
+                <li><a href="About&contact.html" style="border-bottom: 2.5px solid blue; padding-bottom: 0px;">About us</a></li>
+                <li><a href="#contactus" style="border-bottom: 2.5px solid blue; padding-bottom: 0px;">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="aboutbg">
+        <p>About Us</p>
+    </div>
+
+    <div class="Aboutinfo">
+        
+        <p><span class="left"></span>
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+             <b> CodeCourseForBeginners (CCForBeginners) </b> is the platform in which you can find lots of coding courses like web development, android development and many more. You can also find projects here to enhance your skills. There is also a guidance section in which you can watch videos related to your questions for example what steps you have to take to become a developer (e.g. App developer, etc.) <br> <br>
+        All videos contents are from YouTube platform.</p>
+    </div>
+    <div class="thankabout"><p>Thankyou so much for visting CodeCourseForBeginners learning website</p></div>
+
+
+    <!----------------------- Contact Form ------------------------------>
+
+    <div class="container" id="contactus">
+        <div style="text-align:center" class="hicontact">
+          <h2>Contact Us</h2>
+          <p>Send a feedback or ask any query</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/contact.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email Id">
+              
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <!----------------------------------- Footer ------------------------------->
+    <footer class="footerbtom">
+        <div class="divftbar">
+            <ul class="ulft">
+                <p>Courses</p>
+                <li><a href="">Web development</a></li>
+                <li><a href="">Frontend development</a></li>
+                <li><a href="">Backend development</a></li>
+                <li><a href="">Android development</a></li>
+                <li><a href="">Python development</a></li>
+            </ul>
+            <ul class="ulft">
+                <p>Career guidance</p>
+                <li><a href="">Blog contents</a></li>
+                <li><a href="">Video contents</a></li>
+            </ul>
+            <ul class="ulft">
+                <p>Jobs</p>
+                <li><a href="">Web developer</a></li>
+                <li><a href="">Full stack developer</a></li>
+                <li><a href="">Frontend developer</a></li>
+                <li><a href="">Backend developer</a></li>
+                <li><a href="">Android developer</a></li>
+                <li><a href="">Python developer</a></li>
+            </ul>
+        </div>
+
+        <p class="pbtm"> Explore More Courses and Learn it, Prepare yourself for Best Contribution to the world.
+        <ul class="followus">
+            <li><a href=""><i class="fa-brands fa-youtube linksft"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram linksft"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook linksft"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter linksft"></i></a></li>
+        </ul>
+        </p>
+        <p class="pbtm">
+            &copy;Copyright 2023 CodeCourseForBeginners
+        </p>
+    </footer>
+
+<!-- -------------------------------------------------------------------- -->
+
+    <script>
+
+        let menupartabout = document.getElementById("menupartabout");
+    
+        menupartabout.style.maxHeight = '0px';
+    
+        function openmenuabout() {
+            if (menupartabout.style.maxHeight == "0px") {
+                menupartabout.style.maxHeight = "250px";
+            }
+            else {
+                menupartabout.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
