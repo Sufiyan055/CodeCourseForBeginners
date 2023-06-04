@@ -516,7 +516,7 @@
   scroll-snap-align: start;
 }
 .divcoursesection:nth-child(2){
-  background: linear-gradient(#00000091,#0000009e),url(images/web.jpg);
+  background: linear-gradient(#00000091,#0000009e),url(web.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -524,7 +524,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(3){
-  background: linear-gradient(#0000008c,#00000085),url(images/android.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(android.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -532,7 +532,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(4){
-  background: linear-gradient(#0000008c,#00000085),url(images/softwaretest.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(softwaretest.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -540,7 +540,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(5){
-  background: linear-gradient(#0000008c,#00000085),url(images/cybersecurity.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(cybersecurity.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -548,7 +548,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(6){
-  background: linear-gradient(#0000008c,#00000085),url(images/game\ dev.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(game\ dev.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -556,7 +556,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(7){
-  background: linear-gradient(#0000008c,#00000085),url(images/uiandux.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(uiandux.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -564,7 +564,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(8){
-  background: linear-gradient(#0000008c,#00000085),url(images/machine\ learn.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(machine\ learn.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -572,7 +572,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(9){
-  background: linear-gradient(#0000008c,#00000085),url(images/seo.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(seo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -580,7 +580,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(10){
-  background: linear-gradient(#0000008c,#00000085),url(images/cloud.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(cloud.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -588,7 +588,7 @@
   margin: 10px 0px;
 }
 .divcoursesection:nth-child(11){
-  background: linear-gradient(#0000008c,#00000085),url(images/datasci.jpg);
+  background: linear-gradient(#0000008c,#00000085),url(datasci.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -814,7 +814,7 @@
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
 .Projectsmainlist:nth-child(1){
-  background: linear-gradient(to top,#ffffff16,#00000049,#00000024),url(images/projectsmain.jpg);
+  background: linear-gradient(to top,#ffffff16,#00000049,#00000024),url(projectsmain.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -884,7 +884,7 @@
 
 .aboutbg{
   padding: 30px 0px;
-  background: linear-gradient(to bottom,#00000078,#0000001a),url(images/aboutus.jpg);
+  background: linear-gradient(to bottom,#00000078,#0000001a),url(aboutus.jpg);
   width: 100%;
   height: 50vh;
   background-position: center;
