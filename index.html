@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Bruno+Ace+SC&family=Cedarville+Cursive&family=Edu+NSW+ACT+Foundation:wght@600&family=Fasthand&family=Gelasio:ital,wght@1,500&family=Kalam:wght@300&family=Lobster&family=Noto+Serif:ital,wght@0,700;1,400;1,700&family=Philosopher:ital@1&family=Poppins:ital,wght@0,300;1,200;1,300;1,500&family=Potta+One&family=Raleway:ital,wght@1,600&family=Ubuntu:ital,wght@1,300;1,400&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>CodeCourseForBeginners</title>
+</head>
+
+<body>
+
+    <div class="stickybar">
+        <div class="notstickybar">
+            <h1> <a href="index.html"><i class="material-symbols-outlined iconHome"
+                        style="color: #000;">home</i></a>CodeCourseForBeginners</h1>
+
+            <span class="menudisplayicon"><i onclick="openmenu()" class="material-symbols-outlined menuiconpic"
+                    style="color: #000;">
+                    menu
+                </i></span>
+
+            <ul id="menulist">
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="CareerGuidance.html">Guidance</a></li>
+                <li><a href="About&contact.html">About us</a></li>
+                <li><a href="About&contact.html#contactus">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- upperone is navber part -->
+    <!-- below is the front party -->
+    <div class="divimgbar">
+        <div class="divsearchbar">
+
+
+            <div class="divsearchicon">
+                <img class="iconsearch" src="search_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                <input type="text" id="myInput" onkeyup="myFunction()" onclick="displaymenu()"
+                    placeholder="Search for names..">
+            </div>
+
+            <div class="divsearchresult">
+                <ul id="myUL">
+                    <li><a href="Courses.html#WebDev">Web development</a></li>
+                    <li><a href="#">Backend development</a></li>
+
+                    <li><a href="#">Billy</a></li>
+                    <li><a href="#">Bob</a></li>
+
+                    <li><a href="#">Calvin</a></li>
+                    <li><a href="#">Christina</a></li>
+                    <li><a href="#">Cindy</a></li>
+                    <li><a href="Courses.html#barpython">Python</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Next part below front part -->
+
+    <h1 class="h1tutorial">Courses For You</h1>
+
+    <!-- --------------------1st div for 4 courses list------------------- -->
+    <div class="tutorialicons">
+        <div class="diviconimg hiddenleft" onclick="popupimg()"><img class="imgicon"
+                src="images/HTML5_logo_and_wordmark.svg" alt=""></div>
+        <div class="dividpage" id="popuppage">
+            <header class="h2tuvids">Courses From Different Authors</header>
+            <button class="btn" onclick="closepopup()">X</button>
+            <div class="vidstubar">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MDLn5-zSQQI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PL0b6OzIxLPbxStBQ21C2toa5uQMqHEoRT"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/THp_EowtJ0M"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+
+            </div>
+
+            <a class="abaryt" target="_blank" href="https://www.youtube.com/results?search_query=html+tutorial">Explore
+                more on YouTube &#x2192</a>
+        </div>
+
+        <!-- ---------------------------------------------- -->
+
+        <div class="diviconimg hiddenleft" onclick="popupimg2()"><img class="imgicon"
+                src="images/CSS3_logo_and_wordmark.svg" alt=""></div>
+        <div class="dividpage" id="popuppage2">
+            <header class="h2tuvids">Courses From Different Authors</header>
+            <button class="btn" onclick="closepopup2()">X</button>
+            <div class="vidstubar">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Edsxf_NBFrw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PL0b6OzIxLPbzDsI5YXUa01QzxOWyqmrWw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OXGznpKZ_sA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/w2z7BMr4MY0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Rs2ND1ryYc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <a class="abaryt" target="_blank" href="https://www.youtube.com/results?search_query=css+tutorial">Explore
+                more on YouTube &#x2192</a>
+        </div>
+
+        <!-- ------------------------------------------- -->
+        <div class="diviconimg hiddenleft" onclick="popupimg3()"><img class="imgicon"
+                src="images/Unofficial_JavaScript_logo_2.svg" alt=""></div>
+
+        <div class="dividpage" id="popuppage3">
+            <header class="h2tuvids">Courses From Different Authors</header>
+            <button class="btn" onclick="closepopup3()">X</button>
+            <div class="vidstubar">
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W6NZfCO5SIk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/B7wHpNUUT4Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KGkiIBTq0y0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+            <a class="abaryt" target="_blank"
+                href="https://www.youtube.com/results?search_query=javascript+tutorial">Explore
+                more on YouTube &#x2192</a>
+
+        </div>
+        <!-- ------------------------------------------ -->
+        <div class="diviconimg hiddenleft" onclick="popupimg4()"><img class="imgicon"
+                src="images/Java_programming_language_logo.svg" alt=""></div>
+
+        <div class="dividpage" id="popuppage4">
+            <header class="h2tuvids">Courses From Different Authors</header>
+            <button class="btn" onclick="closepopup4()">X</button>
+            <div class="vidstubar">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UmnCZ7-9yDY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eIrMbAQSU34"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/grEKMHGYyns"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+
+            </div>
+
+            <a class="abaryt" target="_blank" href="https://www.youtube.com/results?search_query=java+tutorial">Explore
+                more on YouTube &#x2192</a>
+        </div>
+
+        <!-- ---------------------------------------- -->
+
+    </div>
+    <!-- --------------------2nd div for 4 courses list------------------- -->
+    <div class="tutorialicons">
+        <div class="diviconimg hidden" onclick="popupimg5()"><img class="imgicon" src="images/PHP-logo.svg" alt="">
+        </div>
+
+        <div class="dividpage" id="popuppage5">
+            <header class="h2tuvids">Courses From Different Authors</header>
+            <button class="btn" onclick="closepopup5()">X</button>
+            <div class="vidstubar">
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OK_JCtrrv-c"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PL0b6OzIxLPbyrzCMJOFzLnf_-_5E_dkzs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6EukZDFE_Zg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <a class="abaryt" target="_blank" href="https://www.youtube.com/results?search_query=php+tutorial">Explore
+                more on YouTube &#x2192</a>
+
+        </div>
+
+        <!-- ------------------------------------- -->
+
+        <div class="diviconimg hidden" onclick="popupimg6()"><img class="imgicon" src="images/Python-logo-notext.svg"
+                alt=""></div>
+
+        <div class="dividpage" id="popuppage6">
+            <header class="h2tuvids">Courses From Different Authors</header>
+            <button class="btn" onclick="closepopup6()">X</button>
+            <div class="vidstubar">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vLqTf2b6GZw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kqtD5dpn9C8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gfDE2a7MKjA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WGJJIrtnfpk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <a class="abaryt" target="_blank"
+                href="https://www.youtube.com/results?search_query=python+tutorial">Explore
+                more on YouTube &#x2192</a>
+
+        </div>
+        <!--------------------------------------------->
+        <div class="diviconimg hidden" onclick="popupimg7()"><img class="imgicon" src="images/ISO_C++_Logo.svg" alt="">
+        </div>
+        <div class="dividpage" id="popuppage7">
+            <header class="h2tuvids">Courses From Different Authors</header>
+            <button class="btn" onclick="closepopup7()">X</button>
+            <div class="vidstubar">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzaPdXTrSb8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vLnPwxZdW4Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <a class="abaryt" target="_blank"
+                href="https://www.youtube.com/results?search_query=c%2B%2B+tutorial">Explore
+                more on YouTube &#x2192</a>
+        </div>
+
+        <!-- ------------------------------------------ -->
+
+        <div class="diviconimg hidden" onclick="popupimg8()"><img class="imgicon"
+                src="images/The_C_Programming_Language_logo.svg" alt=""></div>
+
+        <div class="dividpage" id="popuppage8">
+            <header class="h2tuvids">Courses From Different Authors</header>
+            <button class="btn" onclick="closepopup8()">X</button>
+            <div class="vidstubar">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/irqbmMNs2Bo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KJgsSFOSQv0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PL98qAXLA6aftD9ZlnjpLhdQAOFI8xIB6e"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZSPZob_1TOk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <a class="abaryt" target="_blank" href="https://www.youtube.com/results?search_query=c+tutorial">Explore
+                more on YouTube &#x2192</a>
+        </div>
+
+    </div>
+
+    <div class="divalink"><a href="Courses.html">Explore More Courses here &#x2192</a></div>
+
+    <footer class="footerbtom">
+        <div class="divftbar">
+            <ul class="ulft">
+                <p>Courses</p>
+                <li><a href="">Web development</a></li>
+                <li><a href="">Frontend development</a></li>
+                <li><a href="">Backend development</a></li>
+                <li><a href="">Android development</a></li>
+                <li><a href="">Python development</a></li>
+            </ul>
+            <ul class="ulft">
+                <p>Career guidance</p>
+                <li><a href="">Blog contents</a></li>
+                <li><a href="">Video contents</a></li>
+            </ul>
+            <ul class="ulft">
+                <p>Jobs</p>
+                <li><a href="">Web developer</a></li>
+                <li><a href="">Full stack developer</a></li>
+                <li><a href="">Frontend developer</a></li>
+                <li><a href="">Backend developer</a></li>
+                <li><a href="">Android developer</a></li>
+                <li><a href="">Python developer</a></li>
+            </ul>
+        </div>
+
+        <p class="pbtm"> Explore More Courses and Learn it, Prepare yourself for Best Contribution to the world.
+        <ul class="followus">
+            <li><a href=""><i class="fa-brands fa-youtube linksft"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram linksft"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook linksft"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter linksft"></i></a></li>
+        </ul>
+        </p>
+        <p class="pbtm">
+            &copy;Copyright 2023 CodeCourseForBeginners
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
